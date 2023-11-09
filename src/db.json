@@ -112,9 +112,30 @@
              "price" : 350,
              "description" : "Australian coffe with Espresso and steamed milk, similar to latte but with a higher coffee-to-milk ratio",
              "image" : "https://i.pinimg.com/236x/36/37/dd/3637dd93642dfea21c1ce8fe15dab430.jpg"
-         }
+         },
+         {
+            "id":15,
+            "title":"Drip coffee",
+            "price":450,
+            "image":"https://coffee.com.au/wp-content/uploads/2023/02/Drip-Coffee.jpg",
+            "description":"Drip coffee machines control all of the variables like pour speed, water temperature or brew time for you."            
+        },
+        {
+            "id":16,
+            "title":"Affogato",
+            "price":250,
+            "image":"https://www.recipetineats.com/wp-content/uploads/2023/06/Affogato_0-SQ.jpg",
+            "description":"An affogato, more traditionally known as affogato al caffè, is an Italian coffee-based dessert"
+            
+        },
+        {
+            "id":17,
+            "title":"Doppio",
+            "price":350,
+            "image":"https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/stock%2FGettyImages-1305201249",
+            "description":"Doppio espresso is a double shot which is extracted using double the amount of ground coffee in a larger-sized portafilter basket."
+            
+        }
 
-     
-       ] 
-       
-    }
+     ]
+ }
