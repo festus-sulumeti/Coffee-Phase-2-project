@@ -21,6 +21,14 @@ function SidebarContent() {
         <CartProducts />
       </div>
 
+      <div>
+        <CartProducts
+            cartData={cartData}
+            removeFromCart={removeFromCart}
+            updateQuantity={updateQuantity}
+        />
+      </div>
+
       {/* User Profile (Assuming user authentication) */}
       <div className="user-profile">
         <img src="user_profile_image_url" alt="User Profile" />
