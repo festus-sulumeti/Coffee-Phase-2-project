@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import CoffeeList from './Components/CoffeeList';
+import SearchBar from './Components/SearchBar';
+import Sidebar from './Components/Sidebar';
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="main-content">
+        <header>
+          <h1>
+            <i className="uil uil-coffee"></i>Walisa React Coffee Shop<i className="uil uil-coffee"></i>
+          </h1>
+        </header>
+        <SearchBar onSearch={setSearchTerm} />
+        <CoffeeList searchTerm={searchTerm} />
+      </div>
+      <Sidebar />
     </div>
   );
 }
