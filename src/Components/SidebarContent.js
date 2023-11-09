@@ -21,13 +21,13 @@ function SidebarContent() {
         <CartProducts />
       </div>
 
-      <div>
+      {/* <div>
         <CartProducts
             cartData={cartData}
             removeFromCart={removeFromCart}
             updateQuantity={updateQuantity}
         />
-      </div>
+      </div> */}
 
       {/* User Profile (Assuming user authentication) */}
       <div className="user-profile">
