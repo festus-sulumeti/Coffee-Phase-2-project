@@ -1,0 +1,120 @@
+{
+    "coffee": [
+         {
+             "id" : 1,
+             "title" : "Espresso",
+             "price" : 350,
+             "description" : "Espresso, a concentrated coffee made by forcing hot after through finely-ground coffee beans",
+             "image" : "https://i.pinimg.com/564x/45/5d/fc/455dfc03aeb68cee9e29fc11293d6874.jpg"
+         },
+ 
+         {
+             "id" : 2,
+             "title" : "Cappuccino",
+             "price" : 370,
+             "description" : "The classic italian type of coffe made of espresso, streamed milk, and thick foam",
+             "image" : "https://i.pinimg.com/564x/33/44/2e/33442e58a74503c7cef4fc437a4ebc8e.jpg"
+         },
+ 
+         {
+             "id" : 3,
+             "title" : "latte",
+             "price" : 250,
+             "description" : "An Espresso with streamed milk and a dolltop of milk foam, making it smootherand gentlerl",
+             "image" : "https://i.pinimg.com/564x/e3/83/f9/e383f9aba12fcabbffd116323690fb57.jpg"
+         },
+ 
+         {
+             "id" : 4,
+             "title" : "Americano",
+             "price" : 400,
+             "description" : "Made by diluting Espresso with hot water. its like milder coffee",
+             "image" : "https://i.pinimg.com/564x/0c/c5/22/0cc522b2844f5db2231045d10fb1ffbc.jpg"
+         },
+ 
+ 
+         {
+             "id" : 5,
+             "title" : "Macchiato",
+             "price" : 500,
+             "description" : "An Espresso 'stained' with a small amount of milk",
+             "image" : "https://i.pinimg.com/236x/0d/f5/02/0df502bcac70670ad060940dc2d6a961.jpg"
+         },
+ 
+ 
+         {
+             "id" : 6,
+             "title" : "Mocha",
+             "price" : 350,
+             "description" : "Made with Espresso, chocolate and steamed milk",
+             "image" : "https://i.pinimg.com/236x/64/06/d6/6406d6ea581d7e87f22bff8f10a92944.jpg"
+         },
+ 
+         {
+             "id" : 7,
+             "title" : "Ristretto",
+             "price" : 380,
+             "description" : "Concentrated form of Espresso with shorter extraction time",
+             "image" : "https://i.pinimg.com/564x/c3/4a/ed/c34aedd173018f1c4459562db618d178.jpg"
+         },    
+ 
+         {
+             "id" : 8,
+             "title" : "Turkish Coffee",
+             "price" : 350,
+             "description" : "Finely ground coffee and sweetened with sugar and cardamom",
+             "image" : "https://i.pinimg.com/564x/8f/d0/f0/8fd0f03a70aa792dbd5aca747d60fa2d.jpg"
+         },
+ 
+         {
+             "id" : 9,
+             "title" : "Irish Coffee",
+             "price" : 450,
+             "description" : "Consists of hot coffee, Irish whiskey, sugar and topped with whipped cream",
+             "image" : "https://i.pinimg.com/236x/33/32/15/333215800046f3f16a61b9c03d7ef420.jpg"
+         },
+ 
+         {
+             "id" : 10,
+             "title" : "Affogato",
+             "price" : 380,
+             "description" : "Simple desert made by pouring a shot of hot Espresso over a scoop of vanilla ice cream",
+             "image" : "https://i.pinimg.com/236x/cd/4d/a8/cd4da800df3ab313da33b305098341b3.jpg"
+         },
+ 
+         {
+             "id" : 11,
+             "title" : "Vlenna Coffee",
+             "price" : 420,
+             "description" : "Creamy made with black coffee, whipped cream and chocolate shavings",
+             "image" : "https://i.pinimg.com/236x/a0/5e/77/a05e7715e40fde7b44059df8b6457122.jpg"
+         },
+ 
+         {
+             "id" : 12,
+             "title" : "Cortado",
+             "price" : 500,
+             "description" : "Spanish coffee made through combining espresso and steamed milk in equal parts",
+             "image" : "https://i.pinimg.com/564x/20/21/34/202134a71ca678a54e97be0016aa0815.jpg"
+         },
+ 
+         {
+             "id" : 13,
+             "title" : "Red Eye Coffee",
+             "price" : 350,
+             "description" : "Also known as the 'shot in the dark' is a black coffee with a shot of espresso",
+             "image" : "https://i.pinimg.com/564x/34/02/6c/34026ce9645a5e1babb7f7d487b48c24.jpg"
+         },
+ 
+         {
+             "id" : 14,
+             "title" : "Flat white",
+             "price" : 350,
+             "description" : "Australian coffe with Espresso and steamed milk, similar to latte but with a higher coffee-to-milk ratio",
+             "image" : "https://i.pinimg.com/236x/36/37/dd/3637dd93642dfea21c1ce8fe15dab430.jpg"
+         }
+
+     
+       ] 
+       
+    }
