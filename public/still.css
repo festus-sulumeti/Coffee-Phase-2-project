@@ -1,0 +1,215 @@
+.container2{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ 
+ span{
+    color: #0891B2;
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.4rem;
+ }
+ 
+ 
+ h3{
+    margin: 10px 0 0;
+ }
+ 
+ 
+ p{
+    color: #666;
+    line-height: 1.4;
+    margin: 10px 0 0;
+ }
+ 
+ 
+ button{
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    font-size: 0.9rem;
+ }
+ 
+ 
+ .card {
+    background-color: white;
+    padding: 2.5rem;
+    max-width: 16rem;
+    border-radius: 10px;
+ }
+ 
+ 
+ h1 {
+    color: #2563EB;
+    margin: 0;
+ }
+ 
+ 
+ p {
+    line-height: 1.4
+ }
+ 
+ 
+ 
+ 
+ .cards-me {
+    background-color: white;
+    margin: 100px auto;
+    width: 165px;
+    height: 320px;
+    padding: 30px;
+    border-radius: 10px;
+ }
+ 
+ 
+ .cards-me img {
+    height: 2.4rem;
+ }
+ 
+ 
+ .cards-me p {
+    margin: 20px 0;
+    line-height: 1.4;
+ }
+ 
+ 
+ .card-me span {
+    font-weight: bold;
+    font-size: 1.1rem;
+ }
+ 
+ 
+ 
+ 
+ .card-li {
+    width: 60%;
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  .imagery {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  .paragraph{
+    line-height: 1.4;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007BFF;
+ }
+   /* Generic Styles End */
+  .card-li {
+    height: 350px;
+    display: grid;
+    align-content: space-between;
+ }
+ 
+ 
+ 
+ 
+ .container3 {
+    margin: 2rem;
+    padding: 1rem;
+    width: 95%;
+    box-sizing: border-box;
+    background-color: #007BFF;
+    color: white;
+ }
+  .myimage{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    margin-right: 0.8rem;
+    border-radius: 0.3rem;
+ }
+  .name{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0 0 0.2rem;
+ }
+  span {
+    font-size: 0.9rem;
+    opacity: 0.9;
+ }
+ 
+ 
+ .rating i{
+    color: orange;
+    margin-right: 0.2rem;
+ }
+   /* Generic Styles End */
+  .container3 {
+    display: flex;
+    align-items: center;
+ }
+ 
+ 
+ 
+ 
+ form {
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: solid 1px #ddd;
+    color: white;
+ }
+  label {
+    display: block;
+ }
+  input, textarea {
+    margin-top: 0.3rem;
+    padding: 0.6rem;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+    color: #333;
+ }
+ 
+ 
+ 
+ 
+ form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    align-items: start;
+    color: white;
+ }
+ 
+ /*This is the list CSS form for the home about etc*/
+ .wrapper {
+    padding: 3rem;
+    text-align: center;
+    color: #333;
+    background-color: #DDD6FE;
+  }
+   .wrrapper {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+  }
+   .wrrapper a {
+    background-color: #EFF6FF;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6rem;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+ 
+ 
+ 
+
