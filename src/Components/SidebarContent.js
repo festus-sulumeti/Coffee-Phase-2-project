@@ -1,6 +1,7 @@
 // SidebarContent.js
 import React from "react";
 import NavLinks from "./NavLinks";
+import CartProducts from "./CartProducts";
 
 function SidebarContent() {
   return (
@@ -17,10 +18,7 @@ function SidebarContent() {
       {/* View Cart */}
 
       <div className="view-cart">
-        <h3>Your Cart</h3>
-        {/* Display cart items and total price */}
-        {/* Add onClick handler to navigate to the cart */}
-        <button>View Cart</button>
+        <CartProducts />
       </div>
 
       {/* User Profile (Assuming user authentication) */}
