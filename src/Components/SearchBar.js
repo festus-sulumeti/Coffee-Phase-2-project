@@ -11,7 +11,9 @@ function SearchBar({ onSearch }) {
 
   return (
     <div className="search-bar">
-      <input
+
+    
+      <input 
         type="text"
         placeholder="Search for coffee"
         value={searchTerm}
