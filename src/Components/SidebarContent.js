@@ -1,21 +1,21 @@
 // SidebarContent.js
-import React from 'react';
-import NavLinks from './NavLinks'; 
+import React from "react";
+import NavLinks from "./NavLinks";
 
 function SidebarContent() {
   return (
     <div className="sidebar-content">
-      <h2>Walisa Coffee Shop <i className="uil uil-coffee"></i></h2>
+      <h2>
+        Walisa Coffee Shop <i className="uil uil-coffee"></i>
+      </h2>
       <div>
         <NavLinks />
       </div>
-      
-  
+
       <p>Discover our finest coffee collection</p>
 
-      
       {/* View Cart */}
-      
+
       <div className="view-cart">
         <h3>Your Cart</h3>
         {/* Display cart items and total price */}
@@ -35,13 +35,16 @@ function SidebarContent() {
         <p>Buy one get one free on Fridays!</p>
       </div>
 
-
-        {/* Quick Links */}
-        <div className="quick-links">
+      {/* Quick Links */}
+      <div className="quick-links">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#reviews">Customer Reviews</a></li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+          <li>
+            <a href="#reviews">Customer Reviews</a>
+          </li>
           {/* Add more quick links as needed */}
         </ul>
       </div>
@@ -62,20 +65,22 @@ function SidebarContent() {
         {/* Add your event details and calendar here */}
       </div>
 
-     
-
       {/* Social Media Links */}
       <div className="social-media">
         <h3>Connect with Us</h3>
         <div className="social-icons">
           {/* Add your social media icons and links */}
-          <a href="facebook_link" target="_blank" rel="noopener noreferrer"><i className="uil uil-facebook-f"></i></a>
-          <a href="twitter_link" target="_blank" rel="noopener noreferrer"><i className="uil uil-twitter"></i></a>
-          <a href="instagram_link" target="_blank" rel="noopener noreferrer"><i className="uil uil-instagram"></i></a>
+          <a href="facebook_link" target="_blank" rel="noopener noreferrer">
+            <i className="uil uil-facebook-f"></i>
+          </a>
+          <a href="twitter_link" target="_blank" rel="noopener noreferrer">
+            <i className="uil uil-twitter"></i>
+          </a>
+          <a href="instagram_link" target="_blank" rel="noopener noreferrer">
+            <i className="uil uil-instagram"></i>
+          </a>
         </div>
       </div>
-
-     
     </div>
   );
 }
