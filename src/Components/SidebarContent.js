@@ -7,7 +7,7 @@ function SidebarContent() {
   return (
     <div className="sidebar-content">
       <h2>
-        Walisa Coffee Shop <i className="uil uil-coffee"></i>
+       <i className="uil uil-coffee"> Walisa Coffee Shop</i>
       </h2>
       <div>
         <NavLinks />

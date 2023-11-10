@@ -9,6 +9,10 @@ function CoffeeList({ searchTerm }) {
   // Function to add a coffee item to the cart
   const addToCart = (coffee) => {
     setSelectedItems([...selectedItems, coffee]);
+    
+
+    // Automatically hide the cart popup after 3 seconds
+    
   };
 
   const filteredCoffee = coffeeData.coffee.filter((coffee) =>
