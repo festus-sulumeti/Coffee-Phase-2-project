@@ -2,12 +2,15 @@
 import React from "react";
 import NavLinks from "./NavLinks";
 import CartProducts from "./CartProducts";
+import { useCart } from "./CartContext"; // Import useCart from the CartContext
 
 function SidebarContent() {
+  const { cartData, removeFromCart, updateQuantity } = useCart(); // Use the useCart hook
+
   return (
     <div className="sidebar-content">
       <h2>
-       <i className="uil uil-coffee"> Walisa Coffee Shop</i>
+        Walisa Coffee Shop <i className="uil uil-coffee"></i>
       </h2>
       <div>
         <NavLinks />
@@ -16,18 +19,13 @@ function SidebarContent() {
       <p>Discover our finest coffee collection</p>
 
       {/* View Cart */}
-
       <div className="view-cart">
-        <CartProducts />
-      </div>
-
-      {/* <div>
         <CartProducts
-            cartData={cartData}
-            removeFromCart={removeFromCart}
-            updateQuantity={updateQuantity}
+          cartData={cartData}
+          removeFromCart={removeFromCart}
+          updateQuantity={updateQuantity}
         />
-      </div> */}
+      </div>
 
       {/* User Profile (Assuming user authentication) */}
       <div className="user-profile">

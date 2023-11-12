@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
-import coffeeData from '../db.json';
-
+// CoffeeList.js
+import React from "react";
+import coffeeData from "../db.json";
+import { useCart } from "./CartContext"; // Import useCart from the CartContext
 
 function CoffeeList({ searchTerm }) {
-  const [selectedItems, setSelectedItems] = useState([]);
-  
-
-  // Function to add a coffee item to the cart
-  const addToCart = (coffee) => {
-    setSelectedItems([...selectedItems, coffee]);
-    
-
-    // Automatically hide the cart popup after 3 seconds
-    
-  };
+  const { addToCart } = useCart(); // Use the useCart hook
 
   const filteredCoffee = coffeeData.coffee.filter((coffee) =>
     coffee.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -21,20 +12,20 @@ function CoffeeList({ searchTerm }) {
 
   return (
     <div className="coffee-list" id="coffee-list">
-     
       {filteredCoffee.map((coffee) => (
         <div className="coffee-item" key={coffee.id}>
-       
-                <img src={coffee.image} alt={coffee.title} />
-                <h3>{coffee.title}</h3>
-                <p>ksh. {coffee.price}</p>
-                <p>{coffee.description}</p>
-                <button className="add-to-cart-button" onClick={() => addToCart(coffee)}>
-                    Add to Cart
-                </button>
+          <img src={coffee.image} alt={coffee.title} />
+          <h3>{coffee.title}</h3>
+          <p>ksh. {coffee.price}</p>
+          <p>{coffee.description}</p>
+          <button
+            className="add-to-cart-button"
+            onClick={() => addToCart(coffee)}
+          >
+            Add to Cart
+          </button>
         </div>
       ))}
-      
     </div>
   );
 }

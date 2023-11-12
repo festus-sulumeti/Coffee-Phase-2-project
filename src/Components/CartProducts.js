@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-
 function CartProducts({ cartData, removeFromCart, updateQuantity }) {
   // Check if the cart is empty, and display a message if it is
   if (!cartData || cartData.length === 0) {
@@ -60,7 +59,9 @@ function CartProducts({ cartData, removeFromCart, updateQuantity }) {
                   </button>
                 </div>
               </td>
-              <td>Price: ${(product.price * product.quantity).toFixed(2)}</td>
+              <td>
+                Price: ksh.{(product.price * product.quantity).toFixed(2)}
+              </td>
               <td>
                 {/* Button to remove the item from the cart */}
                 <Button
@@ -76,7 +77,7 @@ function CartProducts({ cartData, removeFromCart, updateQuantity }) {
         </tbody>
       </table>
       <div className="total-price">
-        Total Price: ${totalCartPrice.toFixed(2)}
+        Total Price: ksh {totalCartPrice.toFixed(2)}
       </div>
     </div>
   );
