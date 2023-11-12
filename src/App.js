@@ -1,3 +1,4 @@
+// App.js
 import React, { useState } from 'react';
 import './App.css';
 import CoffeeList from './Components/CoffeeList';
@@ -6,6 +7,25 @@ import Sidebar from './Components/Sidebar';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [cartData, setCartData] = useState([]);
+
+  const addToCart = (coffee) => {
+    setCartData([...cartData, { ...coffee, quantity: 1 }]);
+  };
+
+  const removeFromCart = (productToRemove) => {
+    setCartData(cartData.filter((product) => product.id !== productToRemove.id));
+  };
+
+  const updateQuantity = (product, quantityChange) => {
+    const updatedCart = cartData.map((item) => {
+      if (item.id === product.id) {
+        return { ...item, quantity: item.quantity + quantityChange };
+      }
+      return item;
+    });
+    setCartData(updatedCart);
+  };
 
   return (
     <div className="container">
@@ -16,9 +36,10 @@ function App() {
           </h1>
         </header>
         <SearchBar onSearch={setSearchTerm} />
-        <CoffeeList searchTerm={searchTerm} />
+        {/* Pass the addToCart function to CoffeeList */}
+        <CoffeeList searchTerm={searchTerm} addToCart={addToCart} />
       </div>
-      <Sidebar />
+      <Sidebar cartData={cartData} removeFromCart={removeFromCart} updateQuantity={updateQuantity} />
     </div>
   );
 }
