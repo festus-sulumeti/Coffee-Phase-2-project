@@ -41,7 +41,7 @@ function SidebarContent() {
 
       {/* Quick Links */}
       <div className="quick-links">
-        <h3>Quick Links</h3>
+        <h3>Reviews</h3>
         <ul>
           <li>
             <a href="#contact">Contact Us</a>
