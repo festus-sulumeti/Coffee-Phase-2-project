@@ -1,13 +1,17 @@
-// App.js
-import React, { useState } from 'react';
-import './App.css';
-import CoffeeList from './Components/CoffeeList';
-import SearchBar from './Components/SearchBar';
-import Sidebar from './Components/Sidebar';
-import AboutSection from './Components/AboutSection'
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import "./App.css";
+import CoffeeList from "./Components/CoffeeList";
+import SearchBar from "./Components/SearchBar";
+import Sidebar from "./Components/Sidebar";
+
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [cartData, setCartData] = useState([]);
 
   const addToCart = (coffee) => {
@@ -15,7 +19,9 @@ function App() {
   };
 
   const removeFromCart = (productToRemove) => {
-    setCartData(cartData.filter((product) => product.id !== productToRemove.id));
+    setCartData(
+      cartData.filter((product) => product.id !== productToRemove.id)
+    );
   };
 
   const updateQuantity = (product, quantityChange) => {
@@ -29,22 +35,60 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <div className="main-content">
-        <header>
-          <h1>
-            <i className="uil uil-coffee"></i>Walisa React Coffee Shop<i className="uil uil-coffee"></i>
-          </h1>
-        </header>
-        <SearchBar onSearch={setSearchTerm} />
-        {/* Pass the addToCart function to CoffeeList */}
-        <CoffeeList searchTerm={searchTerm} addToCart={addToCart} />
-        <AboutSection/>
+    <Router>
+      <div className="container">
+        <div className="main-content">
+          <header>
+            <h1>
+              <i className="uil uil-coffee"></i>Walisa React Coffee Shop
+              <i className="uil uil-coffee"></i>
+            </h1>
+          </header>
+          <SearchBar onSearch={setSearchTerm} />
+
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  {/* Pass the addToCart function to CoffeeList on all pages */}
+                  <CoffeeList searchTerm={searchTerm} addToCart={addToCart} />
+                </>
+              }
+            />
+            <Route
+              path="/Home"
+              element={
+                <>
+                  <Home />
+                </>
+              }
+            />
+            <Route
+              path="/Menu"
+              element={
+                <>
+                  <Menu />
+                </>
+              }
+            />
+            <Route
+              path="/About"
+              element={
+                <>
+                  <AboutUs />
+                </>
+              }
+            />
+          </Routes>
+        </div>
+        <Sidebar
+          cartData={cartData}
+          removeFromCart={removeFromCart}
+          updateQuantity={updateQuantity}
+        />
       </div>
-      <Sidebar cartData={cartData} removeFromCart={removeFromCart} updateQuantity={updateQuantity} />
-   
-    </div>
-    
+    </Router>
   );
 }
 
