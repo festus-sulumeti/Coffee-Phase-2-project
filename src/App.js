@@ -4,6 +4,7 @@ import './App.css';
 import CoffeeList from './Components/CoffeeList';
 import SearchBar from './Components/SearchBar';
 import Sidebar from './Components/Sidebar';
+import AboutSection from './Components/AboutSection'
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -38,9 +39,12 @@ function App() {
         <SearchBar onSearch={setSearchTerm} />
         {/* Pass the addToCart function to CoffeeList */}
         <CoffeeList searchTerm={searchTerm} addToCart={addToCart} />
+        <AboutSection/>
       </div>
       <Sidebar cartData={cartData} removeFromCart={removeFromCart} updateQuantity={updateQuantity} />
+   
     </div>
+    
   );
 }
 

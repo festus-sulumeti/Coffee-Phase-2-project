@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+/* styles.css */
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color:whitesmoke;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  max-width: 600px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* styles.css */
+.about-section {
+  background-image: url('https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  color: #fff; 
+}
+.about-content {
+  color: #2a343a; 
+}
