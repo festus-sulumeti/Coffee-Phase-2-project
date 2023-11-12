@@ -1,0 +1,70 @@
+/* Styling the CartProducts table */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styling the cart product info */
+.cart-product-info {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-info img {
+    max-width: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.cart-product-info h4 {
+    margin: 0;
+}
+
+/* Styling the cart product quantity */
+.cart-product-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.quantity-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the cart product button */
+.cart-product-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.cart-product-button:hover {
+    background-color: #bd2130;
+}
+
+/* Styling the total price */
+.total-price {
+    margin-top: 20px;
+    font-weight: bold;
+}
