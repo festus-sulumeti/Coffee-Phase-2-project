@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import coffeeData from '../db.json';
-import CartPopup from './CartPopup';
+
 
 function CoffeeList({ searchTerm }) {
   const [selectedItems, setSelectedItems] = useState([]);
@@ -36,7 +36,7 @@ function CoffeeList({ searchTerm }) {
                 </button>
         </div>
       ))}
-      {showCartPopup && <CartPopup />}
+      
     </div>
   );
 }
