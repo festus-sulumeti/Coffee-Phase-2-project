@@ -4,17 +4,11 @@ import coffeeData from '../db.json';
 
 function CoffeeList({ searchTerm }) {
   const [selectedItems, setSelectedItems] = useState([]);
-  const [showCartPopup, setShowCartPopup] = useState(false);
+  
 
   // Function to add a coffee item to the cart
   const addToCart = (coffee) => {
     setSelectedItems([...selectedItems, coffee]);
-    setShowCartPopup(true);
-
-    // Automatically hide the cart popup after 3 seconds
-    setTimeout(() => {
-      setShowCartPopup(false);
-    }, 3000);
   };
 
   const filteredCoffee = coffeeData.coffee.filter((coffee) =>
