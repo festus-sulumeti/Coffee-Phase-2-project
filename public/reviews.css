@@ -1,4 +1,9 @@
 
+.horizontal-inputs {
+  display: flex;
+  gap: 10px; 
+}
+
 .star-rating {
     display: flex;
   }
