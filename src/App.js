@@ -73,7 +73,7 @@ function App() {
               }
             />
             <Route
-              path="/About"
+              path="/AboutUs"
               element={
                 <>
                   <AboutUs />
