@@ -29,8 +29,15 @@ export const CartProvider = ({ children }) => {
     setCartData(updatedCart);
   };
 
+  // Adding the clearCart function to clear the cart
+  const clearCart = () => {
+    setCartData([]);
+  };
+
   return (
-    <CartContext.Provider value={{ cartData, addToCart, removeFromCart, updateQuantity }}>
+    <CartContext.Provider
+      value={{ cartData, addToCart, removeFromCart, updateQuantity, clearCart }}
+    >
       {children}
     </CartContext.Provider>
   );

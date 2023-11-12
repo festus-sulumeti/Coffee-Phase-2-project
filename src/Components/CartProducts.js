@@ -1,7 +1,9 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { useCart } from "./CartContext";
 
 function CartProducts({ cartData, removeFromCart, updateQuantity }) {
+  const { clearCart } = useCart();
   // Check if the cart is empty, and display a message if it is
   if (!cartData || cartData.length === 0) {
     return (
@@ -10,6 +12,16 @@ function CartProducts({ cartData, removeFromCart, updateQuantity }) {
       </div>
     );
   }
+  const handleCheckout = () => {
+    if (cartData.length > 0) {
+      alert(
+        "Thank you for your order! We are processing it and we'll notify you shortly."
+      );
+      clearCart();
+    } else {
+      alert("Your cart is empty. Add items before checking out.");
+    }
+  };
 
   // Calculate the total price for all items in the cart
   const totalCartPrice = cartData.reduce((total, product) => {
@@ -79,6 +91,13 @@ function CartProducts({ cartData, removeFromCart, updateQuantity }) {
       <div className="total-price">
         Total Price: ksh {totalCartPrice.toFixed(2)}
       </div>
+      <Button
+        variant="success"
+        className="checkout-button"
+        onClick={handleCheckout}
+      >
+        Checkout
+      </Button>
     </div>
   );
 }
