@@ -50,7 +50,7 @@ function SidebarContent() {
   const handleDateChange = (date) => {
     setSelectedDate(date);
 
-    // Your logic for handling the selected date
+    // The logic for handling the selected date
     console.log(`Selected date: ${date.toDateString()}`);
     
   };
@@ -103,6 +103,11 @@ function SidebarContent() {
 
     return () => clearInterval(interval);
   }, [reviews]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Subscribe button clicked!');
+  };
 
   return (
     <div className="sidebar-content">
@@ -171,13 +176,7 @@ function SidebarContent() {
           updateQuantity={updateQuantity}
         />
       </div>
-
-      
-      {/* Promotions */}
-      {/* <div className="promotions">
-        <h3>Current Promotions</h3>
-        <p>Buy one get one free on Fridays!</p>
-      </div> */}
+      <hr />
 
       <div className="promotions">
         <h3>🌟 Special Offers</h3>
@@ -303,15 +302,20 @@ function SidebarContent() {
       </div>
 
       {/* Newsletter Signup */}
-      <div className="newsletter">
-        <h3>Subscribe to Our Newsletter</h3>
-        <form>
-          <label>Email:</label>
-          <input type="email" placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-
+       <div className="newsletter">
+          <h3>📬 Subscribe to Our Newsletter</h3>
+          <p className="newsletter-description">
+            Stay updated with our latest coffee blends, promotions, and events. Subscribe to our
+            newsletter for a daily dose of coffee inspiration!
+          </p>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="email">Email:</label>
+            <div className="input-container">
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+       </div>
       {/* Event Calendar */}
     {/* Event Calendar */}
     <div className="event-calendar">
