@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
@@ -6,9 +6,8 @@ import CoffeeList from "./Components/CoffeeList";
 import SearchBar from "./Components/SearchBar";
 import Sidebar from "./Components/Sidebar";
 
-import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -34,6 +33,63 @@ function App() {
     setCartData(updatedCart);
   };
 
+  //app.js contact us
+  //where our messages will be stored
+  const [userMessage, setUserMessage] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [usersDetails, setUserDetails] = useState([]);
+  //fetching data from db.json that will be viewed by the admin .. we will send this data as a prop to the admin page
+  //url for the fetch
+  const contactsUrl = "http://localhost:4000/user";
+
+  useEffect(() => {
+    fetch(contactsUrl)
+      .then((res) => res.json())
+      .then((data) => setUserDetails(data))
+      .catch((err) => console.log("error fetching the messages", err));
+  });
+
+  //console.log(usersDetails);
+
+  //handling change of inputs when users adds information or comments
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    //updating userMessage with values user inputs
+    setUserMessage({ ...userMessage, [name]: value });
+  };
+
+  // will be passed as a prop to the page where submition will be done so that when user submits messages they will be posted to our json
+  //creating a post request
+  const handleSubmit = (e) => {
+    //preventing default behaviour of the browser during submition
+    e.preventDefault();
+    // Create a new message object from userMessage
+    //postting user inputs to db.json
+    fetch(contactsUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userMessage),
+    })
+      .then((res) => res.json())
+      .then((user) => {
+        // Updating userMessage as an object
+        setUserMessage({
+          name: "",
+          email: "",
+          message: "",
+        });
+        //alerting the user that their messages have been sent
+        alert("Message sent successfully");
+      })
+      .catch((err) => console.log("error posting the user", err));
+  };
+  // console.log(userMessage);
+
   return (
     <Router>
       <div className="container">
@@ -45,40 +101,26 @@ function App() {
             </h1>
           </header>
           <SearchBar onSearch={setSearchTerm} />
-
           <Routes>
             <Route
-              path="/"
+              path="/CoffeeList"
               element={
-                <>
-                  {/* Pass the addToCart function to CoffeeList on all pages */}
-                  <CoffeeList searchTerm={searchTerm} addToCart={addToCart} />
-                </>
+                <CoffeeList searchTerm={searchTerm} addToCart={addToCart} />
               }
             />
             <Route
-              path="/Home"
+              path="/ContactUs"
               element={
-                <>
-                  <Home />
-                </>
+                <ContactUs
+                  userMessage={userMessage}
+                  handleInputChange={handleInputChange}
+                  handleSubmit={handleSubmit}
+                />
               }
             />
             <Route
-              path="/Menu"
-              element={
-                <>
-                  <Menu />
-                </>
-              }
-            />
-            <Route
-              path="/AboutUs"
-              element={
-                <>
-                  <AboutUs />
-                </>
-              }
+              path="/AdminPage"
+              element={<AdminPage usersDetails={usersDetails} />}
             />
           </Routes>
         </div>
