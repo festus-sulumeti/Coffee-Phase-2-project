@@ -36,16 +36,16 @@ function SidebarContent() {
   const [newReview, setNewReview] = useState({ name: '', comment: '', rating: 0, profilePic: '' });
   const [replyText, setReplyText] = useState('');
   const [replyingTo, setReplyingTo] = useState(null);
-
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [isCustomerSupportOpen, setCustomerSupportOpen] = useState(false);
+  const [isLoyaltyProgramOpen, setLoyaltyProgramOpen] = useState(false);
+ 
+
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
-
- 
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
@@ -107,6 +107,21 @@ function SidebarContent() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Subscribe button clicked!');
+  };
+
+  const openCustomerSupport = () => {
+    setCustomerSupportOpen(true);
+    setLoyaltyProgramOpen(false);
+  };
+
+  const openLoyaltyProgram = () => {
+    setLoyaltyProgramOpen(true);
+    setCustomerSupportOpen(false);
+  };
+
+  const closeSections = () => {
+    setCustomerSupportOpen(false);
+    setLoyaltyProgramOpen(false);
   };
 
   return (
@@ -193,6 +208,43 @@ function SidebarContent() {
             </p>
         </div>
       </div>
+
+      {/* Membership or Loyalty Program */}
+      <div className="section loyalty-program">
+        <h3 onClick={openLoyaltyProgram}>🌟 Loyalty Program</h3>
+        {isLoyaltyProgramOpen && (
+          <div className="section-details">
+            <p>Join our Loyalty Program and enjoy exclusive benefits:</p>
+            <ul>
+              <li>Points for every purchase</li>
+              <li>Special discounts</li>
+              <li>Early access to new products</li>
+              <li>
+                <button>Sign Up Now</button>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
+
+
+      {/* Customer Support */}
+      <div className="section customer-support">
+        <h3 onClick={openCustomerSupport}>🛠️ Customer Support</h3>
+        {isCustomerSupportOpen && (
+          <div className="section-details">
+            <p>Have a question? Check our FAQs or reach out to us:</p>
+            <ul>
+              <li>Email: support@walisacoffee.com</li>
+              <li>Phone: +(254) 7456-7890</li>
+              <li>
+                <button>Live Chat</button>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
+
 
       {/* Quick Links */}
       <div className="quick-links">
@@ -329,7 +381,7 @@ function SidebarContent() {
             
             <div className="event-info">
               <h4>Artisan Coffee Tasting</h4>
-              <p className="event-date">Date: January 15, 2023</p>
+              <p className="event-date">Date: December 15, 2023</p>
               <p className="event-description">
                 Join us for an exquisite coffee tasting experience featuring our latest artisan blends.
                 Discover the nuances of each cup and immerse yourself in the world of coffee craftsmanship.
@@ -346,13 +398,13 @@ function SidebarContent() {
         <h3>Connect with Us</h3>
         <div className="social-icons">
           {/* Add your social media icons and links */}
-          <a href="facebook_link" target="_blank" rel="noopener noreferrer">
+          <a href="#facebook" rel="noopener noreferrer">
             <i className="uil uil-facebook-f"></i>
           </a>
-          <a href="twitter_link" target="_blank" rel="noopener noreferrer">
+          <a href="#twitter"  rel="noopener noreferrer">
             <i className="uil uil-twitter"></i>
           </a>
-          <a href="instagram_link" target="_blank" rel="noopener noreferrer">
+          <a href="#instagram" rel="noopener noreferrer">
             <i className="uil uil-instagram"></i>
           </a>
         </div>
