@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import NavLinks from "./NavLinks";
 import CartProducts from "./CartProducts";
 import { useCart } from "./CartContext"; // Import useCart from the CartContext
+import Calendar from 'react-calendar';
 
 
 function timeDifference(current, previous) {
@@ -38,11 +39,21 @@ function SidebarContent() {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
+  const [selectedDate, setSelectedDate] = useState(new Date());
+
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
 
+ 
 
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+
+    // Your logic for handling the selected date
+    console.log(`Selected date: ${date.toDateString()}`);
+    
+  };
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewReview((prevReview) => ({ ...prevReview, [name]: value }));
@@ -130,8 +141,27 @@ function SidebarContent() {
       <div>
         <NavLinks />
       </div>
+      <hr />
 
-      <p>Discover our finest coffee collection</p>
+      <div className="discover-coffee">
+        
+        <h3>☕ Discover Our Finest Coffee Collection</h3>
+        <p className="collection-description">
+          Elevate your coffee experience with our carefully curated selection of premium coffee beans.
+          From rich and bold to light and aromatic, we have the perfect brew for every coffee lover.
+          Explore the world of flavors at Walisa Coffee Shop.
+        </p>
+        <img
+          src="https://i.pinimg.com/236x/7b/13/bf/7b13bf8d94300f5bf919b2d11abde1fe.jpg"
+          alt="Coffee Beans"
+          className="secondary-coffee-image"
+        />
+        <p className="create">
+          Immerse yourself in the artistry of our coffee beans. Each sip is a journey, a symphony of
+          flavors that dance on your palate. Our beans are a celebration of craftsmanship, cultivated
+          with passion and roasted to perfection. At Walisa Coffee Shop, every cup tells a story.
+        </p>
+      </div>
 
       {/* View Cart */}
       <div className="view-cart">
@@ -152,6 +182,11 @@ function SidebarContent() {
       <div className="promotions">
         <h3>🌟 Special Offers</h3>
         <div className="promotion-details">
+            <img
+              src="https://i.pinimg.com/236x/99/96/5c/99965c23c053d8e6ee6b08bc8036afe5.jpg"
+              alt="Special Offer"
+              className="promotion-image"
+            />
             <p className="offer-title">Buy one, get one FREE!</p>
             <p className="offer-description">
               Enjoy our exquisite coffee collection every Friday. Purchase one coffee, and get another
@@ -278,10 +313,29 @@ function SidebarContent() {
       </div>
 
       {/* Event Calendar */}
-      <div className="event-calendar">
-        <h3>Upcoming Events</h3>
-        {/* Add your event details and calendar here */}
+    {/* Event Calendar */}
+    <div className="event-calendar">
+      <h3>📅 Upcoming Events</h3>
+      <div className="event-details">
+        <div className="event-card">
+          <div className="paper">
+             <Calendar onChange={handleDateChange} value={selectedDate} />
+          </div>
+           
+            
+            <div className="event-info">
+              <h4>Artisan Coffee Tasting</h4>
+              <p className="event-date">Date: January 15, 2023</p>
+              <p className="event-description">
+                Join us for an exquisite coffee tasting experience featuring our latest artisan blends.
+                Discover the nuances of each cup and immerse yourself in the world of coffee craftsmanship.
+              </p>
+          </div>
+        </div>
+        {/* Add more event cards as needed */}
       </div>
+    </div>
+
 
       {/* Social Media Links */}
       <div className="social-media">

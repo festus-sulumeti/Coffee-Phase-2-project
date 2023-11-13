@@ -5,6 +5,8 @@
 3. Install the route library : npm i react-router-dom
 4. npm install
 5. npm start
+6. Install the calendar library : npm install react-calendar
+
 
                                                    Walisa React Coffee Shop
 Welcome to the Walisa React Coffee Shop, a web application for a coffee shop that allows customers to browse and purchase coffee products. This README provides an overview of the codebase and how the application works.

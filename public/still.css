@@ -271,7 +271,6 @@
 
  
 /*The promotions styles*/
-/* YourStyles.css */
 
 .promotions {
    background-color: #f8f8f8;
@@ -295,11 +294,35 @@
  }
  
  .offer-title {
-   color: #ff5722; /* Orange color, you can adjust the color as needed */
+   color: #007BFF; /* Orange color, you can adjust the color as needed */
    font-size: 18px;
    font-weight: bold;
    margin-bottom: 10px;
  }
+
+ /*More on tthe finnest details*/
+
+.discover-coffee {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ 
+ .discover-coffee h3 {
+   color: #333;
+   font-size: 24px;
+   margin-bottom: 10px;
+ }
+ 
+ .collection-description {
+   color: #666;
+   font-size: 16px;
+   line-height: 1.5;
+ }
+ 
  
  .offer-description {
    color: #666;
@@ -307,3 +330,98 @@
    line-height: 1.5;
  }
  
+ /* YourStyles.css */
+
+.promotion-image {
+   max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+   border-radius: 8px; /* Add rounded corners to the image */
+   margin-right: 20px; /* Provide some space between the image and text */
+ }
+ 
+ .secondary-coffee-image {
+   width: 60%; /* Adjust the width as needed */
+   border-radius: 8px;
+   margin-top: 20px; /* Add some space above the second image */
+ }
+
+ .create {
+   color: #444;
+   font-size: 18px;
+   line-height: 1.6;
+   margin-top: 20px;
+ }
+
+ /*Calendar*/
+ 
+.event-calendar {
+   background-color: #f9f9f9;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ 
+ .event-calendar h3 {
+   color: #333;
+   font-size: 24px;
+   margin-bottom: 10px;
+ }
+ 
+ .event-details {
+   display: flex;
+   justify-content: space-around;
+ }
+ 
+ .event-card {
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin: 10px;
+ }
+ 
+ .event-image {
+   width: 150px;
+   height: 150px;
+   border-radius: 8px;
+   object-fit: cover;
+   margin-bottom: 10px;
+ }
+ 
+ .event-info h4 {
+   color: #333;
+   font-size: 18px;
+   margin-bottom: 10px;
+ }
+ 
+ .event-date {
+   color: #777;
+   font-size: 16px;
+   margin-bottom: 10px;
+ }
+ 
+ .event-description {
+   color: #666;
+   font-size: 16px;
+   line-height: 1.5;
+ }
+ 
+ .react-calendar {
+   max-width: 400px;
+   margin: auto;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  
+ }
+
+ .paper {
+   background-color: #fff; /* White background */
+   color: #333; /* Dark text color */
+   padding: 20px; /* Adjust padding as needed */
+   border-radius: 8px; /* Optional: Add rounded corners */
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+ }
+
+ .react-calendar__month-view__month {
+   color: #fff; /* White color for the month text */
+ }
