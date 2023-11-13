@@ -40,7 +40,7 @@ function SidebarContent() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [isCustomerSupportOpen, setCustomerSupportOpen] = useState(false);
   const [isLoyaltyProgramOpen, setLoyaltyProgramOpen] = useState(false);
- 
+  const [isCollaborationsOpen, setCollaborationsOpen] = useState(false);
 
 
   const toggleDropdown = () => {
@@ -120,9 +120,20 @@ function SidebarContent() {
   };
 
   const closeSections = () => {
+    setCollaborationsOpen(false);
     setCustomerSupportOpen(false);
     setLoyaltyProgramOpen(false);
   };
+  
+ 
+
+  const openCollaborations = () => {
+    setCollaborationsOpen(true);
+    setCustomerSupportOpen(false);
+    setLoyaltyProgramOpen(false);
+  };
+
+
 
   return (
     <div className="sidebar-content">
@@ -226,7 +237,24 @@ function SidebarContent() {
           </div>
         )}
       </div>
-
+      
+      {/* Collaborations or Partnerships */}
+      <div className="section collaborations">
+        <h3 onClick={openCollaborations}>🤝 Collaborations & Partnerships</h3>
+        {isCollaborationsOpen && (
+          <div className="section-details">
+            <p>Explore our exciting collaborations and partnerships:</p>
+            <ul>
+              <li>
+                <strong>Brand X:</strong> Discover unique coffee blends in collaboration with Brand X.
+              </li>
+              <li>
+                <strong>Local Artisans:</strong> Proud partners with local artisans providing handmade coffee accessories.
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
 
       {/* Customer Support */}
       <div className="section customer-support">

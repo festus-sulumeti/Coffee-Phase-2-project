@@ -236,3 +236,33 @@ h2 {
     padding: 8px 12px;
     cursor: pointer;
   }
+
+
+.section.collaborations {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .section.collaborations h3 {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .section.collaborations .section-details {
+    padding: 10px;
+  }
+  
+  .section.collaborations .section-details p {
+    margin-bottom: 10px;
+  }
+  
+  .section.collaborations .section-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section.collaborations .section-details li {
+    margin-bottom: 8px;
+  }
