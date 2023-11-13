@@ -36,6 +36,13 @@ function SidebarContent() {
   const [replyText, setReplyText] = useState('');
   const [replyingTo, setReplyingTo] = useState(null);
 
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewReview((prevReview) => ({ ...prevReview, [name]: value }));
@@ -88,6 +95,35 @@ function SidebarContent() {
 
   return (
     <div className="sidebar-content">
+      {/* User Profile (Assuming user authentication) */}
+      
+      <div className="user-profile">
+        <div className={`user-icon ${isDropdownOpen ? 'active' : ''}`} onClick={toggleDropdown}>
+          <i className="uil uil-user-circle"></i>
+          
+          <i className={`uil uil-angle-down dropdown-icon ${isDropdownOpen ? 'rotate' : ''}`}></i>
+        </div>
+        {isDropdownOpen && (
+          <div className="dropdown-content">
+            <div className="dropdown-option" onClick={() => console.log('View Profile')}>
+              <i className="uil uil-user"></i>
+              <span>View Profile</span>
+            </div>
+            <div className="dropdown-option" onClick={() => console.log('Settings')}>
+              <i className="uil uil-cog"></i>
+              <span>Settings</span>
+            </div>
+            <div className="dropdown-option" onClick={() => console.log('Help')}>
+              <i className="uil uil-question-circle"></i>
+              <span>Help</span>
+            </div>
+            <div className="dropdown-option" onClick={() => console.log('Logout')}>
+              <i className="uil uil-sign-out-alt"></i>
+              <span>Logout</span>
+            </div>
+          </div>
+        )}
+      </div>
       <h2>
         Walisa Coffee Shop <i className="uil uil-coffee"></i>
       </h2>
@@ -106,16 +142,22 @@ function SidebarContent() {
         />
       </div>
 
-      {/* User Profile (Assuming user authentication) */}
-      <div className="user-profile">
-        <img src="user_profile_image_url" alt="User Profile" />
-        <p>Welcome, User123!</p>
-      </div>
-
+      
       {/* Promotions */}
-      <div className="promotions">
+      {/* <div className="promotions">
         <h3>Current Promotions</h3>
         <p>Buy one get one free on Fridays!</p>
+      </div> */}
+
+      <div className="promotions">
+        <h3>🌟 Special Offers</h3>
+        <div className="promotion-details">
+            <p className="offer-title">Buy one, get one FREE!</p>
+            <p className="offer-description">
+              Enjoy our exquisite coffee collection every Friday. Purchase one coffee, and get another
+              one for free! It's a perfect way to share the joy of coffee with a friend.
+            </p>
+        </div>
       </div>
 
       {/* Quick Links */}

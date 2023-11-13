@@ -209,7 +209,101 @@
     text-decoration: none;
     font-size: 0.9rem;
   }
+
+
+  
+/*User profile*/
+
+
+.user-profile {
+   position: relative;
+ }
  
+ .user-icon {
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+ }
  
+ .user-icon i {
+   font-size: 24px; /* Adjust the size as needed for a medium-sized icon */
+ }
+ 
+ .dropdown-icon {
+   margin-left: 5px;
+   font-size: 16px; /* Adjust the size as needed for a medium-sized icon */
+   transition: transform 0.3s ease;
+ }
+ 
+ .rotate {
+   transform: rotate(180deg);
+ }
+ 
+ .dropdown-content {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 100%;
+   right: 0;
+   background-color: #fff;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+   overflow: hidden;
+   z-index: 1;
+ }
+ 
+ .dropdown-option {
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .dropdown-option:hover {
+   background-color: #f5f5f5;
+ }
+ 
+ .dropdown-option i {
+   margin-right: 10px;
+ }
  
 
+ 
+/*The promotions styles*/
+/* YourStyles.css */
+
+.promotions {
+   background-color: #f8f8f8;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+ }
+ 
+ .promotions h3 {
+   color: #333;
+   font-size: 24px;
+   margin-bottom: 10px;
+ }
+ 
+ .promotion-details {
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .offer-title {
+   color: #ff5722; /* Orange color, you can adjust the color as needed */
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+ 
+ .offer-description {
+   color: #666;
+   font-size: 16px;
+   line-height: 1.5;
+ }
+ 
