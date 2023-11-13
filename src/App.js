@@ -102,6 +102,12 @@ function App() {
           </header>
           <SearchBar onSearch={setSearchTerm} />
           <Routes>
+          <Route
+              path="/"
+              element={
+                <CoffeeList searchTerm={searchTerm} addToCart={addToCart} />
+              }
+            />
             <Route
               path="/CoffeeList"
               element={
