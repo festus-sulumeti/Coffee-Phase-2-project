@@ -3,7 +3,7 @@ function ContactUs({ userMessage, handleSubmit, handleInputChange }) {
     <div className="contactform">
       <h1
         style={{
-          backgroundColor: "blue",
+         
           justifyContent: "center",
           padding: "10px",
         }}
