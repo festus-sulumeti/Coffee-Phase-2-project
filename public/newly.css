@@ -84,3 +84,92 @@
 .checkout-button:hover {
   background-color: #bd2130; 
 }
+
+
+
+
+/* Contact us*/
+
+.contactform {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactform h1 {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
+.contactform h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contactform p {
+  font-size: 16px;
+  color: #555;
+}
+
+.contactform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform input,
+.contactform textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contactform button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contactform button:hover {
+  background-color: #0056b3;
+}
+
+.contactform strong {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.contactform hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.starbucks-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.starbucks-info div {
+  width: 48%; /* Adjust as needed */
+}
+
+.starbucks-info strong {
+  color: #333;
+}
+
+.starbucks-info p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
