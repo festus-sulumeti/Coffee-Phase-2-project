@@ -66,7 +66,7 @@ function ContactUs({ userMessage, handleSubmit, handleInputChange }) {
           <p>we are located at Nairobi , Kenya </p>
           <br />
           <strong>Contact Us </strong>
-          <p>You can email us at : starbuckscoffeshop@gmail.com</p>
+          <p>You can email us at : support@walisacoffee.com</p>
         </div>
         <div>
           <p> phone : 0712345678 or 0787654321 </p>
