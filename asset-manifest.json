@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Coffee-Phase-2-project/static/css/main.f859b545.css",
+    "main.js": "/Coffee-Phase-2-project/static/js/main.192fef64.js",
+    "index.html": "/Coffee-Phase-2-project/index.html",
+    "main.f859b545.css.map": "/Coffee-Phase-2-project/static/css/main.f859b545.css.map",
+    "main.192fef64.js.map": "/Coffee-Phase-2-project/static/js/main.192fef64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f859b545.css",
+    "static/js/main.192fef64.js"
+  ]
+}

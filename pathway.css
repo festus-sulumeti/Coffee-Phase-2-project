@@ -1,0 +1,324 @@
+/* Mobile Styles for Small Devices (up to 767px) */
+@media only screen and (max-width: 767px) {
+    /* Reset default styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+  
+    /* Apply a background color to the entire page */
+    body {
+      background-color: #f7f7f7;
+    }
+  
+    /* Styling the container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    /* Styling the header */
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    /* Styling the main content */
+    .main-content {
+      width: 100%;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+  
+    /* Styling the sidebar */
+    .sidebar {
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Style the search bar */
+    .search-bar {
+      margin-top: 10px;
+      padding: 10px;
+    }
+  
+    /* Improve the appearance of coffee items */
+    .coffee-item {
+      width: 100%;
+      margin: 10px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+  
+    /* Style for the coffee list container */
+    #coffee-list {
+      flex-wrap: wrap;
+    }
+  
+    /* Style for each coffee item */
+    .coffee-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+  
+    .coffee-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .coffee-item h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  
+    .coffee-item p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+  
+    .add-to-cart-button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  
+    .add-to-cart-button:hover {
+      background-color: #0056b3;
+    }
+  
+    /* Newsletter */
+    .newsletter {
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .newsletter h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .input-container {
+      flex-direction: column;
+    }
+  
+    label {
+      margin-bottom: 10px;
+    }
+  
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    /* Social media link */
+    .social-media {
+      margin-top: 10px;
+    }
+  
+    .social-media h3 {
+      font-size: 20px;
+    }
+  
+    .social-icons {
+      margin-top: 10px;
+    }
+  
+    .social-icons a {
+      margin: 0 10px 10px 0;
+    }
+  
+  }
+
+
+/* Mobile Styles for Small Devices (up to 767px) */
+@media only screen and (max-width: 767px) {
+    /* Reset default styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+  
+    /* Apply a background color to the entire page */
+    body {
+      background-color: #f7f7f7;
+    }
+  
+    /* Styling the container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    /* Styling the header */
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    /* Styling the main content */
+    .main-content {
+      width: 100%;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+  
+    /* Styling the sidebar */
+    .sidebar {
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Style the search bar */
+    .search-bar {
+      margin-top: 10px;
+      padding: 10px;
+    }
+  
+    /* Improve the appearance of coffee items */
+    .coffee-item {
+      width: 100%;
+      margin: 10px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+  
+    /* Style for the coffee list container */
+    #coffee-list {
+      flex-wrap: wrap;
+    }
+  
+    /* Style for each coffee item */
+    .coffee-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+  
+    .coffee-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .coffee-item h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  
+    .coffee-item p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+  
+    .add-to-cart-button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  
+    .add-to-cart-button:hover {
+      background-color: #0056b3;
+    }
+  
+    /* Newsletter */
+    .newsletter {
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .newsletter h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .input-container {
+      flex-direction: column;
+    }
+  
+    label {
+      margin-bottom: 10px;
+    }
+  
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    /* Social media link */
+    .social-media {
+      margin-top: 10px;
+    }
+  
+    .social-media h3 {
+      font-size: 20px;
+    }
+  
+    .social-icons {
+      margin-top: 10px;
+    }
+  
+    .social-icons a {
+      margin: 0 10px 10px 0;
+    }
+  
+   
+  }
+  

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+/* Reset some default styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333; /* Text color for readability */
+}
+
+/* Apply a background color to the entire page */
+body {
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+}
+
+/* Styling the container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Styling the header */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Styling the main content */
+.main-content {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff; /* White background for the content */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+   
+}
+
+/* Styling the sidebar */
+.sidebar {
+    width: 35%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the search bar */
+.search-bar {
+    margin-top: 20px; /* Increase top margin for separation */
+    padding: 10px;
+}
+
+/* Improve the appearance of coffee items */
+.coffee-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center text in coffee items */
+}
+
+/* Style for the coffee list container */
+#coffee-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for each coffee item */
+.coffee-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.coffee-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.coffee-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.coffee-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.add-to-cart-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
+
+/* Newsletter*/
+
+
+.newsletter {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input {
+    padding: 12px; /* Increased padding for a more comfortable input size */
+    width: 250px; /* Increased width for better visibility */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px; /* Adjusted padding for a more balanced button size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+/*Social media link*/
+  .social-media {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .social-media h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff; /* Icon color, you can customize */
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #55acee; /* Change to the color of your choice */
+  }
+  
+
+  /*More*/
+  
+.section {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .section h3 {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .section-details {
+    padding: 10px;
+  }
+  
+  .section-details p {
+    margin-bottom: 10px;
+  }
+  
+  .section-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section-details li {
+    margin-bottom: 8px;
+  }
+  
+  .section-details button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+
+.section.collaborations {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .section.collaborations h3 {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .section.collaborations .section-details {
+    padding: 10px;
+  }
+  
+  .section.collaborations .section-details p {
+    margin-bottom: 10px;
+  }
+  
+  .section.collaborations .section-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section.collaborations .section-details li {
+    margin-bottom: 8px;
+  }
