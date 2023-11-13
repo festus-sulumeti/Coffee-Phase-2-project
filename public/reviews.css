@@ -18,3 +18,85 @@
     color: rgb(85, 10, 224); 
   }
   
+
+  /*Contact us*/
+  /* Contact Form */
+.contactform {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactform h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contactform h2, .contactform p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform input, .contactform textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contactform button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contactform button:hover {
+  background-color: #0056b3;
+}
+
+/* Thank You Message */
+.contactform strong {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.contactform hr {
+  margin: 20px 0;
+}
+
+/* Starbucks Info */
+.starbucks-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.starbucks-info div {
+  flex: 1;
+}
+
+.starbucks-info strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.starbucks-info p {
+  font-size: 14px;
+}
+
+
